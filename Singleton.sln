@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HungrySingleton", "HungrySingleton\HungrySingleton.vcxproj", "{367E0147-B580-4E13-A986-2909BB153CDC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LazySingleton", "LazySingleton\LazySingleton.vcxproj", "{367E0147-B580-4E13-A986-2909BB153CDC}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MeyerSingleton", "MeyerSingleton\MeyerSingleton.vcxproj", "{6227FEDD-A5CC-46B4-8AE3-0FE1674F39DE}"
 EndProject
