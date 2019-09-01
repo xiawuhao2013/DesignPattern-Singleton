@@ -12,7 +12,7 @@ namespace SingletonDemo
             std::cout << "MeyerSingleton: construction called." << std::endl;
         }
     public:
-        MeyerSingleton(const MeyerSingleton&) = delete;
+        MeyerSingleton(MeyerSingleton&) = delete;
         MeyerSingleton& operator=(const MeyerSingleton&) = delete;
         ~MeyerSingleton()
         {
