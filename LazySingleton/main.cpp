@@ -31,11 +31,11 @@ int main()
                                 {
                                     do
                                     {
-                                        LazySingleton* instanceA = LazySingleton::GetInstance();
-                                        std::cout << instanceA << std::endl;
+                                        LazySingleton& instanceA = LazySingleton::GetInstance();
+                                        std::cout << &instanceA << std::endl;
                                         LazySingleton::Release();
-                                        LazySingleton* instanceB = LazySingleton::GetInstance();
-                                        std::cout << instanceB << std::endl;
+                                        LazySingleton& instanceB = LazySingleton::GetInstance();
+                                        std::cout << &instanceB << std::endl;
                                     } while (--iterTimeA >= 0);
                                 } while (--iterTimeB >= 0);
                             } while (--iterTimeC >= 0);

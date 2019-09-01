@@ -4,7 +4,7 @@ using namespace SingletonDemo;
 
 HungrySingleton* HungrySingleton::instance = new HungrySingleton;
 
-HungrySingleton* HungrySingleton::GetInstance()
+HungrySingleton& HungrySingleton::GetInstance()
 {
-    return instance;
+    return *instance;
 }

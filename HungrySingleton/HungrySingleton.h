@@ -23,6 +23,6 @@ namespace SingletonDemo
             std::cout << "HungrySingleton: destruction called." << std::endl;
         }
 
-        static HungrySingleton* GetInstance();
+        static HungrySingleton& GetInstance();
     };
 }

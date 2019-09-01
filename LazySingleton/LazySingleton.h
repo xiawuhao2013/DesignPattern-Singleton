@@ -22,7 +22,7 @@ namespace SingletonDemo
             //delete instance;
         }
 
-        static LazySingleton* GetInstance();
+        static LazySingleton& GetInstance();
         static void Release();
     };
 }

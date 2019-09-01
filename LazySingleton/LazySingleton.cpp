@@ -4,14 +4,14 @@ using namespace SingletonDemo;
 
 LazySingleton* LazySingleton::instance = nullptr;
 
-LazySingleton* LazySingleton::GetInstance()
+LazySingleton& LazySingleton::GetInstance()
 {
     if (nullptr == instance)
     {
         instance = new LazySingleton;
     }
 
-    return instance;
+    return *instance;
 }
 
 void LazySingleton::Release()

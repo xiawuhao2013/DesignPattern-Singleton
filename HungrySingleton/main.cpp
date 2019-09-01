@@ -4,16 +4,16 @@
 using namespace SingletonDemo;
 int main(int argc, char* argv)
 {
+    std::cout << "Singleton demo: Hungry singleton." << std::endl;
     do
     {
-        HungrySingleton::GetInstance();
-        std::cout << HungrySingleton::GetInstance() << std::endl;
-        std::cout << HungrySingleton::GetInstance() << std::endl;
-        std::cout << HungrySingleton::GetInstance() << std::endl;
-
+        HungrySingleton& instanceA = HungrySingleton::GetInstance();
+        std::cout << &instanceA << std::endl;
+        HungrySingleton& instanceB = HungrySingleton::GetInstance();
+        std::cout << &instanceB << std::endl;
+        HungrySingleton& instanceC = HungrySingleton::GetInstance();
+        std::cout << &instanceC << std::endl;
     } while (false);
 
-
-    std::cout << "Singleton demo: Hungry singleton." << std::endl;
     return 0;
 }
